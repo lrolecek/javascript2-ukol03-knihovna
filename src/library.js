@@ -60,12 +60,4 @@ export default class Library {
     }
   }
 
-  renderHTMLAllBooks() {
-    const target = document.querySelector('#booklist');
-    let output = this.bookList.reduce((prev, curr) => {
-      return prev + curr.renderHTML(curr === this.currentBook);
-    }, '');
-    target.innerHTML = output;
-  }
-
 }

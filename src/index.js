@@ -6,7 +6,7 @@ import Library from './library';
 /* založíme objekt knihovny (třída Library) */
 let knihovna = new Library();
 
-/* přidáme do knihovny knihy */
+/* přidáme do knihovny knihy (kniha = třída Book) */
 knihovna.addBook( new Book('Leo Tolstoy', 'Anna Karenina', 1877, 'anna-karenina.jpg') );
 knihovna.addBook( new Book('Charles Dickens', 'A Tale of Two Cities', 1859, 'a-tale-of-two-cities.jpg') );
 knihovna.addBook( new Book('Jack London', 'The Call of the Wild', 1903, 'call-of-the-wild.jpg') );
@@ -24,21 +24,8 @@ knihovna.addBook( new Book('Alexandre Dumas', 'The Count of Monte Cristo', 1844,
 knihovna.addBook( new Book('Rudyard Kipling', 'The Jungle Book', 1894, 'the-jungle-book.jpg') );
 knihovna.addBook( new Book('H. G. Wells', 'The War of the Worlds', 1897, 'the-war-of-the-worlds.jpg') );
 
-knihovna.bookList[1].read();
-knihovna.bookList[2].read();
-knihovna.bookList[4].read();
-knihovna.bookList[7].read();
-knihovna.bookList[11].read();
-knihovna.bookList[12].read();
-knihovna.bookList[14].read();
-
-/* vypíšeme knihy v knihovně */
-knihovna.listAllBooks();
-
 /* začneme číst další knihu v pořadí */
 knihovna.startReadingNextBook();
 
-/* vypíšeme znovu knihy v knihovně */
+/* vypíšeme všechny knihy v knihovně */
 knihovna.listAllBooks();
-
-knihovna.renderHTMLAllBooks();
